@@ -10,9 +10,11 @@ async def root():
 
 @app.get("/hello/{name}")
 async def say_hello(name: str):
-
     """
-    Metodo para retornar el nombre
-
+   This method says hello to the person name from the fastapi course
+   :param name: The person's name
+   :type name: str
+   :return: The greetings message
+   :rtype: dict[str, s
     """
     return {"message": f"Hello {name}"}
